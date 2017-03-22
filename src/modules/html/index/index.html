@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="index.scss">
+
+<div class="index">
+	<div class="contain">
+		<video src="video-bg.mp4" autoplay loop muted poster="video_cover.jpeg">
+			<source src="video-bg.mp4" type="video/webm">
+		</video>
+	</div>
+	<img src="images/content-bg.jpg" alt="">
+</div>
+
+<script>
+  var main = require('js/main');
+
+  main.Slide2.init();
+  main.Show.init('.annouce','.close','.overlay');
+</script>

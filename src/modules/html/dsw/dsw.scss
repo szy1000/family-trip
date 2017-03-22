@@ -1,0 +1,78 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+@import "skel";
+
+// Skel Setting
+@include skel-breakpoints((
+  large: "(max-width: 623px)",
+  base:  "(max-width: 375px)",
+  small: "(max-width: 320px)"
+));
+
+.dsw{
+	.banner-box{
+		img{
+			width:100%;
+		}
+	}
+	.content{
+		padding: 200px 0;
+		width:100%;
+		background-image: url(images/dsw-bg.png);
+	}
+
+	.trip-box{
+		position: relative;
+		margin-bottom:60px;
+		padding: 40px 100px;
+		width:900px;
+		height:370px;
+		border-radius: 15px;
+		background-color: #fff;
+		.animal{
+			position: absolute;
+			left:-200px;
+			bottom:20px;
+			height:170px;
+			width:295px;
+			background:url(images/tiger.png);
+			background-repeat: no-repeat;
+		}
+		.detail{
+			width:200px;
+			text-align: center;
+			p{
+				margin: 10px;
+				font-size:12px;
+			}
+		}
+		.pic{
+			width:500px;
+			text-align:center;
+			li{
+				display:inline-block;
+				margin:0 15px 15px 0;
+			}
+		}
+	}
+
+	.dog{
+		.animal{
+			left:100%;
+			bottom:20px;
+			height:280px;
+			width:180px;
+			background-image:url(images/dog.png);
+		}
+	}
+
+	.giraffe{
+		.animal{
+			left:-140px;
+			width:140px;
+			height:330px;
+			background-image:url(images/giraffe.png);
+		}
+	}
+}

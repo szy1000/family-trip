@@ -1,2 +1,2 @@
-# framily-trip
-framily-trip
+# family-trip
+family-trip

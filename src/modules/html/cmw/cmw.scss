@@ -1,0 +1,76 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+@import "skel";
+
+// Skel Setting
+@include skel-breakpoints((
+  large: "(max-width: 623px)",
+  base:  "(max-width: 375px)",
+  small: "(max-width: 320px)"
+));
+
+.cmw{
+	.banner-box{
+		img{
+			width:100%;
+		}
+	}
+	.links{
+		li{
+			margin-bottom:2px;
+		}
+		a{
+			display:block;
+			width:300px;
+			height:60px;
+			color:#fff;
+			line-height:60px;
+			text-align:center;
+			font-size:16px;
+			&.pink{
+				background-color:#ef2580
+			}
+			&.two{
+				background-color:#8dc741
+			}
+			&.three{
+				background-color:#02b6a6
+			}
+			&.four{
+				background-color:#f69330
+			}
+			&.five{
+				background-color:#e3ea74
+			}
+			&.six{
+				background-color:#804098
+			}
+		}
+	}
+
+	.list{
+		min-height:500px;
+		width:900px;
+		font-size:0;
+		li{
+			display:inline-block;
+			margin:0 10px 0;
+		}
+		a{
+			display:block;
+			text-align:center;
+			.imgBox{
+				width:225px;
+				height:335px;
+				overflow:hidden;
+				img{
+					width:100%;
+				}
+			}
+		}
+		p{
+			font-size:15px;
+		}
+	}
+}

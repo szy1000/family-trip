@@ -1,0 +1,25 @@
+// Core variables and mixins
+@import "variables";
+@import "mixins";
+@import "skel";
+
+// Skel Setting
+@include skel-breakpoints((
+  large: "(max-width: 623px)",
+  base:  "(max-width: 375px)",
+  small: "(max-width: 320px)"
+));
+
+.index{
+	width: 100%;
+	background-color: #b0e4f4;
+	.contain{
+		width: 100%;
+		video{
+			width: 100%;
+		}
+	}
+	img{
+		width:100%;
+	}
+}

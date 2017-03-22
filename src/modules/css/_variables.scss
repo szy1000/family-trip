@@ -1,0 +1,64 @@
+//Colors
+$gray-base:              #484848;
+$gray-dark:              #383838;
+$gray-light:             #a5a5a5;
+$gray-lighter:           #aaaaaa;
+
+$iconfont-color:				 #2c2b3a;
+
+
+$light:                  #f4f4f4;
+$white:                  #ffffff;
+
+$brand:									 #815c3d;
+
+$body-bg:                #f0f0f0;
+$body-width:             1200px;
+$index-section-width:    850px;
+$index-aside-width:      330px;
+
+$module-padding:         12px;
+$module-margin:          $module-padding;
+$text-color:             $gray-base;
+$link-color:             $gray-base;
+$link-hover-color:       #1e70bf;
+
+$border-radius:           5px;
+
+//font color
+$font-base:								#7f7f7f;
+
+//font-size
+$font-size-xlarge:        15px;
+$font-size-large:         14px;
+$font-size-base:          13px;
+$font-size-small:         12px;
+$font-size-xsmall:        11px;
+
+$font-size-h1:            18px;
+$font-size-h2:            16px;
+$font-size-h3:            15px;
+$font-size-h4:            14px;
+$font-size-h5:            13px;
+$font-size-h6:            12px;
+
+$font-h1-lh:              28px;
+$font-h2-lh:              25px;
+$font-xlarge-lh:          23px;
+$font-large-lh:           22px;
+$font-base-lh:            20px;
+$font-small-lh:           19px;
+$font-xsmall-lh:          17px;
+
+
+//Typography
+$font-family-sans-serif:  "Tahoma","Helvetica Neue","Lantinghei SC",Arial,"Microsoft Yahei","Hiragino Sans GB",STXihei,Helvetica,sans-serif;
+$font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-num:         Impact;
+$font-family-more:        "Hiragino Sans GB","SimSun";
+$font-family-base:        $font-family-sans-serif;
+
+//Icon
+$icon-font-path:          "../../fonts/";
+$icon-font-name:          "iconfont";
+$icon-font-svg-id:        $icon-font-name;
