@@ -68,10 +68,21 @@ var Tab = {
   init: function(e,content) {
     require(['zepto', 'zepto/touch'], function ($, tap) {
       $(e).tap(function () {
-        // console.log($(this).index());
+        console.log($(this).index());
         // $(e).children().eq($(this).index()).addClass('active').siblings().removeClass('active')
         $(e).eq($(this).index()).addClass('active').siblings().removeClass('active')
         $(content).eq($(this).index()).addClass('show').siblings().removeClass('show');
+      })
+    })
+  }
+}
+
+var Tab1 = {
+  init: function(e,content) {
+    require(['jquery.1.4.2-min'], function () {
+      $(e).click(function(){
+        $(this).addClass('on').siblings().removeClass('on');
+        $(content).eq($(this).index()).addClass('on').siblings().removeClass('on');
       })
     })
   }
@@ -118,5 +129,6 @@ exports.Slide2 = Slide2;
 exports.Show = Show;
 exports.Datepicker = Datepicker;
 exports.Tab = Tab;
+exports.Tab1 = Tab1;
 exports.Alert = Alert;
 exports.Toggle = Toggle;
