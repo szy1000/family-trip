@@ -1,4 +1,6 @@
 <link rel="stylesheet" href="detail.scss">
+<!-- <link rel="stylesheet" href="magiczoomplus.css"> -->
+<!-- <link rel="stylesheet" href="zzsc.css"> -->
 
 <div class="detail">
 	<div class="gallery wrapper clearfix">
@@ -10,9 +12,17 @@
 		    </div>
 		    <!--bigImg end-->
 		    <div class="smallImg">
-		      <div class="scrollbutton smallImgUp disabled"></div>
-		      <div id="imageMenu">
+		      <div class="scrollbutton smallImgUp disabled" id="gotop"></div>
+		      <div id="imageMenu showArea" >
 		        <ul>
+		        	<a href="images/img01.jpg" rel="zoom1" rev="images/img01.jpg"><img src="images/img01s.jpg" /></a>
+							<a href="images/img02.jpg" rel="zoom1" rev="images/img02.jpg"><img src="images/img02s.jpg" /></a>
+							<a href="images/img03.jpg" rel="zoom1" rev="images/img03.jpg"><img src="images/img03s.jpg" /></a>
+							<a href="images/img01.jpg" rel="zoom1" rev="images/img01.jpg"><img src="images/img01s.jpg" /></a>
+							<a href="images/img02.jpg" rel="zoom1" rev="images/img02.jpg"><img src="images/img02s.jpg" /></a>
+							<a href="images/img03.jpg" rel="zoom1" rev="images/img03.jpg"><img src="images/img03s.jpg" /></a>
+							<a href="images/img01.jpg" rel="zoom1" rev="images/img01.jpg"><img src="images/img01s.jpg" /></a>
+							<a href="images/img02.jpg" rel="zoom1" rev="images/img02.jpg"><img src="images/img02s.jpg" /></a>
 		          <li id="onlickImg"><img src="images/small/img01.jpg" width="90" height="70"/></li>
 		          <li><img src="images/small/img02.jpg" width="90" height="70"/></li>
 		          <li><img src="images/small/img03.jpg" width="68" height="68"/></li>
@@ -22,7 +32,7 @@
 		          <li><img src="images/small/img03.jpg" width="68" height="68"/></li>
 		        </ul>
 		      </div>
-		      <div class="scrollbutton smallImgDown"></div>
+		      <div class="scrollbutton smallImgDown"  id="gobottom"></div>
 		    </div>
 		    <!--smallImg end-->
 		    <div id="bigView" style="display:none;">
@@ -113,7 +123,7 @@
 		</div>
 		<div class="plan-content">
 			<ul class="plan-ul">
-				<li class="tripCon">
+				<li class="tripCon on">
 					<div class="tip">以下行程可能与实际行程有所不同，详情欢迎来电咨询，具体行程以出团通知书为准。↓</div>
 					<ul class="days">
 						<ol>
@@ -257,10 +267,30 @@
 		</div>
 	</div>
 		
+	<div class="left-pro">
+		<div class="t1">
+			<img src="images/gotop.gif" id="gotop" />
+			<div id="showArea">
+				<a href="images/img01.jpg" rel="zoom1" rev="images/img01.jpg"><img src="images/img01s.jpg" /></a>
+				<a href="images/img02.jpg" rel="zoom1" rev="images/img02.jpg"><img src="images/img02s.jpg" /></a>
+				<a href="images/img03.jpg" rel="zoom1" rev="images/img03.jpg"><img src="images/img03s.jpg" /></a>
+				<a href="images/img01.jpg" rel="zoom1" rev="images/img01.jpg"><img src="images/img01s.jpg" /></a>
+				<a href="images/img02.jpg" rel="zoom1" rev="images/img02.jpg"><img src="images/img02s.jpg" /></a>
+				<a href="images/img03.jpg" rel="zoom1" rev="images/img03.jpg"><img src="images/img03s.jpg" /></a>
+				<a href="images/img01.jpg" rel="zoom1" rev="images/img01.jpg"><img src="images/img01s.jpg" /></a>
+				<a href="images/img02.jpg" rel="zoom1" rev="images/img02.jpg"><img src="images/img02s.jpg" /></a>
+			</div>
+			<img src="images/gobottom.gif" id="gobottom"  />
+		</div>
+		<div class="t2">
+		<a href="images/img01.jpg" id="zoom1" class="MagicZoom MagicThumb"><img src="images/img01.jpg" id="main_img" class="main_img" style="width:400px; height:400px;" /></a>
+		</div>
+	</div>
+
 </div>
 
 <script>
   var main = require('js/main');
-
-  main.Tab1.init('.news-head li','.news-content li');
+  main.Change.init();
+  main.Tab1.init('.plan-header li','.plan-ul li');
 </script>

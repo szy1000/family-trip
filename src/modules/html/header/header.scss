@@ -4,15 +4,19 @@
 
 
 .topbar{
+	position: relative;
+	z-index: 3;
 	height:50px;
 	line-height:50px;
 	color:$font-base;
 	font-size:12px;
 	font-weight:400;
-	background-color: #b0e4f4;
 	overflow:hidden;
 	p{
 		margin: 0;
+	}
+	a{
+//		color:#fff;
 	}
 	.links{
 		li{
@@ -23,14 +27,18 @@
 }
 
 .header{
+	position: relative;
+	z-index: 3;
 	height:90px;
 	width:100%;
+	background:transparent;
 	.logo{
 		width:180px;
 		height: 80px;
 		img{
 			width: 100%;
 		}
+
 	}
 	.links{
 		// line-height: 80px;
@@ -44,6 +52,7 @@
 			display: block;
 			padding:30px 15px  10px 15px;
 			font-weight: 400;
+//			color: #fff;
 			font-family: $font-family-sans-serif;
 		}
 	}

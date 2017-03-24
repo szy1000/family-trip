@@ -11,6 +11,8 @@
 ));
 
 .index{
+	position: relative;
+	margin-top: -140px;
 	width: 100%;
 	background-color: #b0e4f4;
 	.contain{
@@ -22,4 +24,104 @@
 	img{
 		width:100%;
 	}
+	.rel{
+		position: relative;
+	}
+	.part-one{
+		height: 1600px;
+		background-image: url("images/bg1.png");
+		li{
+			position: absolute;
+			img{
+				width:80%;
+			}
+		}
+		.title{
+			position: absolute;
+			top:280px;
+			right:50px;
+			width:390px;
+			height:150px;
+			background-image: url("images/cmw.png");
+			background-size: cover;
+		}
+		.one{
+			top:280px;
+			left:200px;
+		}
+		.two{
+			top:600px;
+			right:0px;
+		}
+		.three{
+			top:900px;
+			left:280px;
+		}
+		.four{
+			top:1100px;
+			right:100px;
+		}
+	}
+	.part-two{
+		height: 1000px;
+		background-image: url("images/bg2.png");
+		background-repeat: no-repeat;
+		text-align: center;
+		.title{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translateX(-50%) translateY(-50%);  
+   		transform: translate(-50%, -50%);  
+			width:390px;
+			height:150px;
+			background-image: url("images/gzw2.png");
+			background-size: cover;
+		}
+		img{
+			margin-top:300px;
+		}
+	}
+
+	.part-three{
+		height: 790px;
+		background-image: url("images/bg3.png");
+		background-repeat: no-repeat;
+		background-position: left bottom;
+		.title{
+			margin: 0 auto  60px;
+			width:390px;
+			height:150px;
+			background-image: url("images/dsw.png");
+			background-size: cover;
+		}
+
+		ul{
+			height:200px;
+		}
+		li{
+			position: relative;
+			display:inline-block;
+			&.one{
+				left:-20px;
+			}
+			&.two{
+				top:70px;
+				margin:0 10px;
+			}
+			&.three{
+				right: -20px;
+			}
+			&.four{
+				top:60px;
+				right:-100px;
+			}
+			&.five{
+				right: -150px;
+				top:100px;
+			}
+		}
+	}
+
+
 }
