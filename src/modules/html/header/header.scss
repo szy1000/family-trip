@@ -12,6 +12,9 @@
 	font-size:12px;
 	font-weight:400;
 	overflow:hidden;
+//  width:expression(document.body.clientWidth <= 1000? "1000px": "auto");
+//width:expression_r(document.body.clientWidth <= 1200? "1200px": "auto");
+
 	p{
 		margin: 0;
 	}

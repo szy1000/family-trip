@@ -20,12 +20,13 @@
 @import "iconfont";
 
 html {
+//  min-width:1200px;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 body {
   position: relative;
-  // font-size: $font-size-xlarge;
+   font-size: $font-size-xlarge;
 }
 
 
@@ -65,6 +66,7 @@ h5, .h5 { font-size: $font-size-h5; }
 h6, .h6 { font-size: $font-size-h6; }
 
 body{
+  min-width:1200px;
   font-family:$font-family-sans-serif;
 }
 .clearfix {
@@ -74,6 +76,7 @@ body{
 .wrapper{
   @include center-block();
   width: 1200px;
+//  width:expression(document.body.clientWidth <= 1200? "1200px": "auto");
 }
 
 ul{

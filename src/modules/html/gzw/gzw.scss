@@ -16,7 +16,61 @@
 			width:100%;
 		}
 	}
+	.content{
+		height:1830px;
+		background-image: url("images/bg.png");
+		p{
+			float: right;
+			margin: 0;
+			text-indent: 30px;
+			line-height: 1.5;
+		}
+		.part1{
+			position: relative;
+			height: 578px;
+			background-image: url("images/part1.png");
+			background-size: cover;
+			.word-box{
+				position: absolute;
+				top: 250px;
+				right: 150px;
+				width: 315px;
+				height: 210px;
+			}
+		}
+		.part2{
+			position: relative;
+			height: 519px;
+			background-image: url("images/part2.png");
+			background-size: cover;
+			background-position: 13px 0;
+			.word-box{
+				position: absolute;
+				left: 80px;
+				top: 245px;
+				width: 365px;
+				height: 210px;
+			}
+		}
+		.part3{
+			position: relative;
+			height: 558px;
+			background-size: cover;
+			background-image: url("images/part3.png");
+			.word-box{
+				position: absolute;
+				right: 90px;
+				top: 100px;
+				width: 365px;
+				height: 210px;
+			}
+		}
+	}
 	img{
 		width: 100%;
+	}
+	.big-wrapper{
+		margin: 0 auto;
+		width:	1289px;
 	}
 }
